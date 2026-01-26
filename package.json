@@ -1,16 +1,16 @@
 {
   "name": "eth-react-big-calendar-localizer",
   "description": "An Ethiopian Calendar localizer for react big calendar.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "author": "Dawit Kebebe Gelalcha",
   "license": "MIT",
-  "types": "./types/index.d.ts",
+  "types": "types/src/index.d.ts",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "exports": {
     ".": {
-      "types": "./types/index.d.ts",
+      "types": "./types/src/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     }
@@ -49,7 +49,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -57,8 +57,15 @@
     "typescript": "~5.9.3",
     "vite": "^7.2.4"
   },
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "package.json"
+  ],
   "dependencies": {
     "@types/react-big-calendar": "^1.16.3",
+    "date-fns": "^4.1.0",
     "kenat": "^3.2.0",
     "react-big-calendar": "^1.19.4"
   }

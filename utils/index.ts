@@ -1,15 +1,20 @@
 import { amharicDays, doubleQuoteRegExp, englishDays, escapedStringRegExp, EthiopicCompositeFormats, formattingTokensRegExp, } from '@/globals';
-import type { FormatComponent, FormatOptions, Unit } from '@/types';
+import type { FormatComponent, FormatOptions, WithWorkWeek } from '@/types';
 import Kenat from 'kenat';
 
 export function toKenat(date: Date): Kenat {
     return new Kenat(date);
 }
 
-export function toKenatUnit(unit: Unit): 'days' | 'weeks' | 'months' | 'years' | 'day' | 'week' | 'month' | 'year' {
+export function toKenatUnit(unit: WithWorkWeek): 'days' | 'weeks' | 'months' | 'years' | 'day' | 'week' | 'month' | 'year' {
     if (unit === 'day' || unit === 'week' || unit === 'month' || unit === 'year') {
         return `${unit}s` as 'days' | 'weeks' | 'months' | 'years' | 'day' | 'week' | 'month' | 'year';
     }
+
+    if (unit === 'work_week') {
+        return 'weeks';
+    }
+
     return unit as 'days' | 'weeks' | 'months' | 'years' | 'day' | 'week' | 'month' | 'year';
 }
 

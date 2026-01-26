@@ -1,4 +1,4 @@
-// import { enUS } from "date-fns/locale";
+import { enUS } from "date-fns/locale";
 import { dateFnsLocalizer } from "react-big-calendar";
 import { format } from "@/src/format";
 import { startOf } from "@/src/startOf";
@@ -18,16 +18,16 @@ import { neq } from "@/src/neq";
 import { inRange } from "@/src/inRange";
 import { toKenat, gregToJSDate } from "@/utils";
 
-// const locales = {
-//     "en-US": enUS,
-// };
+const locales = {
+    "en-US": enUS,
+};
 
 function startOfWeek() {
     return 0
 }
 
 const ethLocalizer = dateFnsLocalizer({
-    // locales: locales,
+    locales: locales,
     format,
     startOf,
     endOf,
@@ -73,3 +73,5 @@ export {
 
     ethLocalizer
 }
+
+export type { } from "@/src/types"

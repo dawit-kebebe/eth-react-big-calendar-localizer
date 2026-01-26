@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "types",
+        "rootDir": ".",
+        "declarationMap": false
+    },
+    "include": [
+        "src",
+        "utils",
+        "globals",
+        "types"
+    ]
+}

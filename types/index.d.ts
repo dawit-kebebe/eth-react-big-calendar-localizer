@@ -21,6 +21,8 @@ type Unit =
     | "decade"
     | "century";
 
+type WithWorkWeek = Unit | "work_week";
+
 type StartOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6
 
 type FormatComponent = {
@@ -63,4 +65,4 @@ interface GridData {
     holidays?: unknown[],
 }
 
-export type { StartOfWeekOptions, DateRange, FormatInput, FormatOptions, Unit, StartOfWeek, FormatComponent, GridData }
+export type { StartOfWeekOptions, DateRange, FormatInput, FormatOptions, Unit, WithWorkWeek, StartOfWeek, FormatComponent, GridData }
