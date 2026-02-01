@@ -1,7 +1,7 @@
 {
   "name": "eth-react-big-calendar-localizer",
   "description": "An Ethiopian Calendar localizer for react big calendar.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Dawit Kebebe Gelalcha",
   "license": "MIT",
