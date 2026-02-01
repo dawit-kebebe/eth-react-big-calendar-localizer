@@ -20,9 +20,11 @@ pnpm add eth-react-big-calendar-localizer
 yarn add eth-react-big-calendar-localizer
 ```
 
-## Quick Example
+## Quick Example and Live Demo
 
-Below is a minimal example showing how to swap between the Gregorian (`momentLocalizer`) and the Ethiopian localizer in a React app.
+- [Live Demo Here](http://eth-react-big-calendar-localizer.dawit-kebebe.github.io/)
+
+- Below is a minimal example showing how to swap between the Gregorian (`momentLocalizer`) and the Ethiopian localizer in a React app.
 
 ```jsx
 import { useState } from 'react'
