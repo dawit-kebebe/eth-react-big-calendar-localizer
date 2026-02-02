@@ -23,7 +23,7 @@ yarn add eth-react-big-calendar-localizer
 ## Quick Example and Live Demo
 
 - [Live Demo Here](https://dawit-kebebe.github.io/eth-react-big-calendar-localizer/)
-<iframe src="https://dawit-kebebe.github.io/eth-react-big-calendar-localizer/" width="100%" height="500" title="Live Demo"></iframe>   
+
 - Below is a minimal example showing how to swap between the Gregorian (`momentLocalizer`) and the Ethiopian localizer in a React app.
 
 ```jsx
